@@ -5,13 +5,13 @@
 }
 
 body {
+    overflow:scroll;
     background-image: linear-gradient(to right, rgb(82, 82, 82), rgb(212, 212, 212));
-    overflow-y: overlay;
 }
 
-#topo{                  
+#topo {
     background-color: rgb(0, 0, 0);
-    color: white;         
+    color: white;
     font-size: 30px;
     width: 100%;
     height: 40px;
@@ -22,11 +22,11 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(59, 59, 59));
 }
-#menus{
-    width: 210px;
-    height: 300px;
+
+#menus {
     margin-top: 15px;
-    margin-left: 270px;
+    width: 200px;
+    height: 300px;
     background-color: rgb(0, 0, 0);
     float: left;
     font-size: 25px;
@@ -36,7 +36,13 @@ body {
 }
 
 .botoes {
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-left: 1px solid white;
+}
+
+.botoes:focus {
+    color: rgb(0, 0, 0);
     background-color: black;
     border-left: 1px solid white;
 }
@@ -48,21 +54,28 @@ body {
     transition-duration: 0.4s;
 }
 
-#app {
+.tab-content {
+    margin-top: 15px;
     width: 900px;
+    padding: 35px;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: justify;
-    margin-top: 15px;
-    padding: 35px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border-radius: 3px;
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(59, 59, 59));
 }
 
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .legenda {
-    font-size:15px; 
+    font-size: 15px;
     text-align: center;
 }
 
@@ -72,7 +85,7 @@ body {
     margin-right: auto;
 }
 
-#rodape{
+#rodape {
     width: 100%;
     height: 2%;
     background-color: rgb(0, 0, 0);
@@ -83,7 +96,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(59, 59, 59));
 }
-
 
 .inputUser {
     width: 100%;
@@ -97,7 +109,6 @@ body {
     padding-left: 5px;
     letter-spacing: 0.1em;
 }
-
 
 #submit {
     color: rgb(0, 0, 0);
@@ -113,6 +124,7 @@ body {
 #submit:hover {
     transition-duration: 0.1s;
     border: none;
-    border-right: 5px solid rgb(107, 107, 107);;
+    border-right: 5px solid rgb(107, 107, 107);
+    ;
     border-left: 5px solid rgb(107, 107, 107);
 }

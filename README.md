@@ -1,5 +1,5 @@
 # introduction-to-jquery
-Projeto para a disciplina de Criação de Páginas Web sobre a biblioteca jQuery
+Projeto sobre a biblioteca jQuery, inicialmente pensado para a disciplina de Criação de Páginas Web, e agora um meio de estudo de Web developing no geral
 
 Este repositório contempla a organização de alguns recursos (marcação, estilização e lógica) de uma página WEB.
 
